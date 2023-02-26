@@ -1,0 +1,35 @@
+{
+  "name": "Ups and Downs",
+  "version": "1.0",
+  "description": "changes the cases",
+  "manifest_version": 3,
+  "commands": {
+    "to-lower-case": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L"
+      },
+      "description": "Transform selected text to lower case"
+    },
+    "to-upper-case": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U"
+      },
+      "description": "Transform selected text to upper case"
+    },
+    "capitalize": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C"
+      },
+      "description": "Capitalize selected text"
+    }
+  },
+  "background.service_worker": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ]
+}
